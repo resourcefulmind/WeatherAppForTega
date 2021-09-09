@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Simple Weather Application Made For Tega</title>
+    <link rel="icon" href="./images/weather.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="api">
+      <div class="container">
+        I want to insert a moving weather display that would show weather of
+        like 10 major cities
+      </div>
+    </div>
+    <!-- I am going to be making this two sections and a footer with the first section for the initial display, the second for the ajax display when we make the call to the API and then the footer -->
+    <!-- First section, INITIAL DISPLAY -->
+    <section class="initial-display">
+      <div class="container">
+        <h1 class="heading">
+          Hi, I'm Tega...want to know the weather today? 🙂
+        </h1>
+        <form>
+          <input type="text" placeholder="Search for a city..." autofocus />
+          <button type="submit">SUBMIT</button>
+          <span class="msg">a</span>
+          <!-- this will show an error message later -->
+        </form>
+      </div>
+    </section>
+    <section class="ajax-section">
+      <!-- Second section, AJAX response display which will include a corresponding city when an API call is made and a city is found -->
+      <div class="container">
+        <ul class="cities"></ul>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="container">
+        <small>
+          Made with kindness for <span>Oghenetega Paul Lesley</span>. You can
+          fork the repository to this app
+          <a href="https://github.com/resourcefulmind">HERE</a>
+        </small>
+      </div>
+    </footer>
+  </body>
+</html>
